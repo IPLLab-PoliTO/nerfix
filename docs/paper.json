@@ -1,0 +1,46 @@
+{
+    "title": "NeRFix: fixing subtle mistakes in the quadrature of the NeRF volumetric integral",
+    "conference": "Accepted at NeurIPS 2026",
+    "authors": [
+        {
+            "name": "Luca Savant Aira",
+            "email": "luca.savant@polito.it",
+            "affiliations": [
+                "1"
+            ],
+            "footnote": [
+                ""
+            ]
+        },
+        {
+            "name": "Diego Valsesia",
+            "email": "diego.valsesia@polito.it",
+            "affiliations": [
+                "1"
+            ],
+            "footnote": [
+                ""
+            ]
+        },
+        {
+            "name": "Enrico Magli",
+            "email": "enrico.magli@polito.it",
+            "affiliations": [
+                "1"
+            ],
+            "footnote": [
+                ""
+            ]
+        }
+    ],
+    "affiliations": [
+        "Politecnico di Torino"
+    ],
+    "footnotes": [],
+    "URLs": {
+        "paper": "https://neurips.cc/virtual/2026/loc/paris/poster/153568",
+        "code": "https://github.com/IPLLab-PoliTO/nerfix"
+    },
+    "abstract": "Neural Radiance Fields (NeRFs) are popular models using MLPs for continuous volumetric representations, which render novel views by means of numerical quadrature of the volumetric integral. Despite the widespread usage of NeRFs, we report subtle mistakes in their quadrature rule which have gone unnoticed for many years. In particular, we highlight mistakes present in both the original NeRF paper and its implementation as well as in the mainstream NeRFStudio implementation. We provide a theoretical analysis of rendering error bounds for NeRF and we use it to show suboptimal convergence rates in the presence of the aforementioned mistakes. We introduce minimal fixes that recover the expected convergence orders with no complexity overhead. Finally, while fixing the quadrature scheme is mostly a matter of theoretical correctness, we also provide experimental evidence that modest improvements in image quality are achieved on standard benchmarks.",
+    "base64bibtex": "QGlucHJvY2VlZGluZ3N7c2F2YW50YWlyYTIwMjZuZXJmaXgsCiAgdGl0bGU9e05lUkZpeDogZml4aW5nIHN1YnRsZSBtaXN0YWtlcyBpbiB0aGUgcXVhZHJhdHVyZSBvZiB0aGUge05lUkZ9IHZvbHVtZXRyaWMgaW50ZWdyYWx9LAogIGF1dGhvcj17U2F2YW50IEFpcmEsIEx1Y2EgYW5kIFZhbHNlc2lhLCBEaWVnbyBhbmQgTWFnbGksIEVucmljb30sCiAgYm9va3RpdGxlPXtBZHZhbmNlcyBpbiBOZXVyYWwgSW5mb3JtYXRpb24gUHJvY2Vzc2luZyBTeXN0ZW1zfSwKICB5ZWFyPXsyMDI2fQp9"
+}
