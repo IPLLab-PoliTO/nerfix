@@ -69,7 +69,7 @@ Our code is [MIT licensed](LICENSE), including attribution for code derived from
 
 ```bibtex
 @inproceedings{savantaira2026nerfix,
-  title={NeRFix: fixing subtle mistakes in the quadrature of the {NeRF} volumetric integral},
+  title={{NeRFix}: fixing subtle mistakes in the quadrature of the {NeRF} volumetric integral},
   author={Savant Aira, Luca and Valsesia, Diego and Magli, Enrico},
   booktitle={Advances in Neural Information Processing Systems},
   year={2026}
