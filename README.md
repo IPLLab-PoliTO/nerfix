@@ -10,7 +10,7 @@ Neural Radiance Fields (NeRFs) are popular models using MLPs for continuous volu
 
 Deep learning can transform a collection of photographs into a realistic three-dimensional representation of a scene, allowing us to view it from perspectives that were never actually captured by a camera. A widely used technique for this purpose is known as "Neural Radiance Fields" (NeRF). To generate new images, this method estimates how light and color vary along the path from each point in the scene toward the camera. In this paper, we demonstrate that two commonly used implementations of this technique contain subtle mathematical errors that have gone unnoticed for years. Although these flaws do not prevent the systems from producing convincing images, they introduce inaccuracies that could be avoided. We identify the causes of these errors and propose simple corrections that make the calculations more precise, without requiring additional computational power or altering the architecture of the NeRF. We prove mathematically that our adjustments improve accuracy and confirm this through experiments, which also show a modest but consistent improvement in image quality. Our findings highlight how re-examining seemingly minor details in well-established artificial intelligence methods can lead to more reliable results, at no additional computational cost.
 
-## Reproduce Figure 3
+## Reproduce Paper Results
 
 This release reproduces all five curves. No GPU, CUDA, dataset, or pretrained weights are required. The environment pins CPU TensorFlow and PyTorch; tested on Linux x86-64.
 
@@ -35,6 +35,10 @@ The experiment evaluates each method at 19 approximately logarithmically spaced 
 - `--check`: runs the numerical validation checks and exits without generating the figure.
 
 Outputs in `results/figure3/`: PNG plot, `errors.csv` with mean absolute and RMS errors, and `metadata.json` with settings, versions, commits, and fitted equations. Measurements appear as unconnected points. Dashed reference rates have regressed offsets and labels on the graph.
+
+
+The output should be something like:
+![Figure 3: Average absolute rendering error versus the number of samples for NeRF, NeRFix, NeRFStudio, and NeRFStudio-Fix.](docs/assets/convergence.png)
 
 ## Code
 
